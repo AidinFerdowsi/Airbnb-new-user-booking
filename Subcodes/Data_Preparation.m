@@ -1,6 +1,6 @@
 %% Data preparation
 clear all;
-load('DATA');
+load('..\DATA\DATA.mat');
 DATA.affiliate_channel = affiliate_channel;
 DATA.affiliate_provider = affiliate_provider;
 DATA.age = age;
@@ -27,5 +27,5 @@ axisNames= {'affiliate\_channel', 'affiliate\_provider', 'age', ...
     'first\_affiliate\_tracked', 'first\_browser', 'first\_device\_type', ...
     'gender', 'id', 'language', 'signup\_app', 'signup\_flow', ...
     'signup\_method', 'timestamp\_first\_active'};
-save('DATASTRUCT','DATA','fieldNames','axisNames');
+save('..\DATA\DATASTRUCT.mat','DATA','fieldNames','axisNames');
 clear all;
