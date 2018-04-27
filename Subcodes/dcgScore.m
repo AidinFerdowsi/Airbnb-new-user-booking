@@ -2,10 +2,11 @@ function [dcgScore, ndcgScore] = dcgScore(yTrue,yScore,k)
 
     %sorted_score = zeros(yScore(1,:));
 	%indices = zeros(yScore(1,:));
-
-    for i=1:length(yScore)
-        [sorted_score(i,:), indices(i,:)] = sort(yScore(i,:), 'descend');
-    end
+    [sorted_score, indices] = sort(yScore,2, 'descend');
+%     for i=1:length(yScore)
+%         [sorted_score(i,:), indices(i,:)] = sort(yScore(i,:), 'descend');
+%     end
+    
     
     %get the first k valuesk
     
