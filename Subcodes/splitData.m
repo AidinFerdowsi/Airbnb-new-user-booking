@@ -1,4 +1,4 @@
-function [trainingSet, trainingSetTarget, testingSet, testingSetTarget] = splitData(trainingData, trainRatio)
+function [trainingSet, trainingSetTarget, testingSet, testingSetTarget] = splitData(trainingData, trainRatio,classColumn)
     %total number of rows
     nRows = size(trainingData, 1);
     %create a logical index vector
@@ -7,10 +7,10 @@ function [trainingSet, trainingSetTarget, testingSet, testingSetTarget] = splitD
     %randomise order
     ind = ind(randperm(nRows));
     trainingSet = trainingData(ind, :);
-    trainingSetTarget = trainingSet(:, 4);
-    trainingSet(:,4) = [];
+    trainingSetTarget = trainingSet(:, classColumn);
+    trainingSet(:,classColumn) = [];
     testingSet = trainingData(~ind, :);
-    testingSetTarget = testingSet(:, 4); 
-    testingSet(:,4) = [];
+    testingSetTarget = testingSet(:, classColumn); 
+    testingSet(:,classColumn) = [];
 end
 
