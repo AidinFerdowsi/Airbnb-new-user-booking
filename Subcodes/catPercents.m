@@ -1,5 +1,4 @@
 function Percents = catPercents(CATEGORICAL,COLOR,XLABEL,YLABEL)
-figure;
 histogram(CATEGORICAL,'FaceColor',COLOR);
 yt = get(gca,'Ytick');
 Percents = yt/(length(CATEGORICAL))*100;
