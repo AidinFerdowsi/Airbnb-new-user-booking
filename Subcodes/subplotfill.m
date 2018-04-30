@@ -12,5 +12,3 @@ x = (col - 1) * dx;
 y = 1 - row * dy;
 
 h = axes('outerposition',[x, y, dx, dy]);
-
-return
