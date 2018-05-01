@@ -1,5 +1,4 @@
 function biVarBar(DATA1,DATA2,XLABEL,YLABEL)
-figure;
 cat1 = categories(DATA1);
 cat2 = categories(DATA2);
 num = zeros(length(cat1),cat(2));
