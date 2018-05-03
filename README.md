@@ -8,4 +8,4 @@ Contributors:
 2) Anamika Sen    (anamikas@vt.edu)
 
 Link to the Kaggle competition: www.kaggle.com/c/airbnb-recruiting-new-user-bookings
-[embed]http://https://drive.google.com/open?id=11fno-Osyq6zQ6XYk0fThZwKevbWfY6OX.pdf[/embed]
+
